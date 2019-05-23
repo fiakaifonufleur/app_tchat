@@ -1,0 +1,78 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Calibri',Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: #003366;
+    margin-bottom: 200px;
+    
+}
+
+h1{
+    margin: 0px;
+    color: #fff;
+    font-size: 4em;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+}
+
+form{
+    width: 600px;
+    margin: 0px auto;
+    position: relative;
+}
+
+input{
+    border: 3px solid  #003366;
+    padding: 10px 10px;
+    font-size: 1em;
+    display: inline-block;
+}
+
+#pseudo{
+    width: 96%;
+    margin-bottom: 40px;
+}
+
+#pass{
+    width: 50%;
+}
+
+#login{
+    width: 20%;
+    background-color: #003366;
+    color: #fff;
+}
+
+#champPass{
+    display: flex;
+    justify-content: space-between;
+}
+
+#compte{
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+#compte a {
+    color: #003366;
+    font-size: 1.5em;
+    font-weight: bold;
+
+}
+img{
+    position: absolute;
+    right: -180px;
+    top: -150px;
+}
+p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 100%;
+
+}
