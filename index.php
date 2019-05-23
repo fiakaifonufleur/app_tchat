@@ -16,8 +16,6 @@
                 <img src="assets/img/logo.png" alt="">
                 <div>
                     <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo">
-                </div>
-                <div id="champPass">
                     <input type="password" name="pass" id="pass" placeholder="Password">
                     <input type="submit" value="Login" id="login" name="bt-login"> 
                 </div>
