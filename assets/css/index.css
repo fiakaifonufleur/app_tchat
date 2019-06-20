@@ -45,7 +45,7 @@ input{
     font-size: 1.2em;
 }
 
-form > div {
+form#login-form > div {
     text-align: center;
 }
 
