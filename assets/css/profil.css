@@ -44,11 +44,11 @@ header #npp-container span {
     font-size: 2em;
 }
 
-header #btamis {
+header #btamis, header #btavatar {
     position: relative;
 }
 
-header #btamis a{
+header #btamis a, header #btavatar a{
     width: 100px;
     text-align: center;
     border: 3px solid black;

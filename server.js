@@ -1,9 +1,38 @@
 const mongo = require('mongodb').MongoClient;
 const client = require('socket.io').listen(4000).sockets;
 
+const express = require('express');
+const bodyParser = require('body-parser');
+
+const app = express();
+const port = process.env.port || 3000;
+const router = require('./router');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+
+app.use(express.static('public'));
+app.use('/assets',express.static('assets'));
+app.set('view engine', 'ejs');
+
+
+/*app.use('/assets/css', function(req, res, next){
+    console.log(req.url);
+    next();
+});*/
+
+app.use('/upload', router);
+app.get('/profil', router);
+
+app.listen(port, function() {
+    console.log("Server running on port", port);
+});
+
+
+
 
 // Connect to mongo
-mongo.connect('mongodb://127.0.0.1/chatdb', function(err, db){
+/*mongo.connect('mongodb://127.0.0.1/chatdb', function(err, db){
     if(err){
         throw err;
     }
@@ -62,4 +91,4 @@ mongo.connect('mongodb://127.0.0.1/chatdb', function(err, db){
             });
         });
     });
-});
+});*/
